@@ -19,6 +19,7 @@ app.on('ready', () => {
   ipcMain.on('tooltip', (e, tooltip) => tray.setToolTip(tooltip))
   ipcMain.on('err', (e, error) => {
     dialog.showErrorBox('Error in script', error)
+    settings.deleteSync('script')
     app.exit(0)
   })
 
