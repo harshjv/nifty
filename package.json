@@ -1,0 +1,42 @@
+{
+  "name": "nifty",
+  "private": true,
+  "scripts": {
+    "test": "standard",
+    "start": "electron main.js",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshjv/nifty.git"
+  },
+  "author": "Harsh Vakharia <harshjv@gmail.com> (https://harshjv.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harshjv/nifty/issues"
+  },
+  "homepage": "https://github.com/harshjv/nifty#readme",
+  "devDependencies": {
+    "electron": "^1.4.15",
+    "electron-builder": "^12.3.1",
+    "standard": "^8.6.0"
+  },
+  "build": {
+    "appId": "com.harshjv.nifty",
+    "productName": "Nifty",
+    "mac": {
+      "category": "public.app-category.productivity"
+    },
+    "linux": {
+      "category": "Utility",
+      "target": [
+        "AppImage",
+        "deb",
+        "rpm",
+        "freebsd",
+        "zip"
+      ]
+    }
+  }
+}

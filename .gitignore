@@ -1,0 +1,17 @@
+# compiled output
+/dist
+tmp
+
+# dependencies
+node_modules
+bower_components
+
+# misc
+npm-debug.log
+
+# minified files
+*.min.css
+*.min.js
+
+# envs
+.env
