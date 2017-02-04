@@ -5,7 +5,8 @@
     "test": "standard",
     "start": "electron main.js",
     "pack": "build --dir",
-    "dist": "build"
+    "dist": "build",
+    "postinstall": "install-app-deps"
   },
   "repository": {
     "type": "git",
