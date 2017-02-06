@@ -1,6 +1,6 @@
 {
   "name": "nifty",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "productName": "Nifty",
   "description": "Mini menu bar application with Node.js and Shell apps",
   "main": "index.js",
