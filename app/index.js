@@ -11,7 +11,7 @@ let tray = null
 let win = null
 
 app.on('ready', () => {
-  app.dock.hide()
+  if (process.platform === 'darwin') app.dock.hide()
 
   tray = new Tray(path.join(__dirname, 'icon.png'))
 
